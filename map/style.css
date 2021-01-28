@@ -19,7 +19,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: tan;
 }
 
 main {
@@ -51,7 +51,8 @@ label {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: flex-end;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
