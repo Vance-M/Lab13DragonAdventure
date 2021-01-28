@@ -27,6 +27,7 @@ button.textContent = 'Submit';
 form.appendChild(button);
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    // function?
     const formData = new FormData(form);
     const choiceId = formData.get('choices');
     const choice = findById(quest.choices, choiceId);
@@ -34,6 +35,7 @@ form.addEventListener('submit', (e) => {
     user.hp += choice.hp;
     user.gold += choice.gold;
     user.completed[questId] = true;
+    // 
     localStorage.setItem('USER', JSON.stringify(user));
     window.location = '../map';
 });

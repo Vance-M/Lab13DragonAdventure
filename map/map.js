@@ -20,6 +20,7 @@ if (user.hp <= 0 || completedAllQuests) {
 
 for (let quest of questData) {
     const li = document.createElement('li');
+    // next 6 rows could be functioned
     const a = document.createElement('a');
     a.classList.add('questPos');
     a.textContent = quest.title;
