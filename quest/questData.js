@@ -1,6 +1,6 @@
 // make you quests here
 const monsters = {
-    id: 'monsters',
+    id: 'Bandits',
     title: 'A Den of Monsters',
     map: {
         top: '89%',
