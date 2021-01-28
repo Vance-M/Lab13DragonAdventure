@@ -1,79 +1,78 @@
 // make you quests here
 const monsters = {
     id: 'Bandits',
-    title: 'A Den of Monsters',
+    title: 'An Ambush by Bandits',
     map: {
         top: '89%',
         left: '44%'
     },
-    image: 'monsters.jpg',
+    image: 'Bandits.jpeg',
     description: `
-        You enter the quest chamber only to be confronted by a hoard of
-        monsters. And they look hungry. What do you do?
+        As you cross the first bridge on your way to slay a dragon suddenly,
+         from the bushes, a group of armed men jump out and threaten you!
+         "Give us 10 Gold or draw your weapon"
     `,
     choices: [{
-        id: 'negotiate',
-        description: 'Negotiate with them',
+        id: 'bribe',
+        description: 'Give them 10 Gold',
         result: `
-            Knowing the monsters are not too bright, you offer to go buy them all
-            turkey dinners from the village pub. They give you 35 gold for meals
-            that will never be delivered. I hope you can live with yourself. 
+            "Thats a good lad." They say as they turn and disappear into the forest to the east.
+            No point in fighting mere bandits and whats 10 Gold when you'll have thousands after killing the dragon.. 
         `,
         hp: 0,
-        gold: 35
+        gold: -10
     }, {
         id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
+        description: 'Draw your weapon and have at thee!',
         result: `
-            Brandishing your sword you let out a warrior's cry and charge into the monsters
-            hacking and slashing. Before long you stand panting gazing across the bodies of
-            your vanquished foes. The bad news is you take 30 hp damage. The good news is you
-            find 50 gold.
+            Wielding your weapon you attack the bandits who frankly didn't expect a fight.
+            Still they are armed and do manage to put up some resistance before being put down.
+            You find 20 Gold on them.
         `,
-        hp: -30,
-        gold: 50
+        hp: -20,
+        gold: 20
     }, {
         id: 'run',
-        description: 'Run away like good Sir Robin',
+        description: 'Run back up the bridge and towards town',
         result: `
-            As you make a dash for the door a giant spider descends and take a bite of flesh,
-            causing 50 hp damage.
+            As you run you hear laughter from the bandits and then a distinct thwonk sound as 
+            an arrow sails towards you. You try to dodge but it cuts across the back of your thigh.
+            Ouch.
         `,
-        hp: -50,
+        hp: -10,
         gold: 0
     }]
 };
 
 const dragon = {
-    id: 'dragon',
-    title: 'A Hairy Dragon',
+    id: 'orcs',
+    title: 'A Band of Orcs',
     map: {
         top: '17%',
         left: '37%'
     },
-    image: 'dragon.jpg',
-    audio: 'dragon.wav',
-    action: 'dragon-growl.aiff',
+    image: 'orcs.jpeg',
+
     description: `
-        You run to a nearby village you have heard is being
-        terrorized by a dragon. Sure enough as you rent a room
-        in a local inn, you go outside and see the dragon about
-        to lay seige! What do you do?
+        As you travel through the swamp you encounter a group of orcs. They seem to be
+        argueing over a bag of Gold. They haven't seen you yet so you could sneak up and attack
+        or, knowing the less then impressive intellect of orcs, you could try to convince them 
+        to let you leave with the Gold.
     `,
     choices: [{
-        id: 'run',
-        description: 'Get the hell out of the village',
-        result: `
-            You high tail it in the opposite direction. Luckily,
-            in the panic you find a bag on the ground with 15 gold.
-            Unluckily, you trip over a discarded wagon wheel on your
-            way out of town and take 40 hp damage. 
-        `,
-        hp: -35,
-        gold: 15
-    }, {
         id: 'fight',
-        description: 'Fiiiiiggghhhttt!',
+        description: 'You decide to kill them',
+        result: `
+            You burst out of cover and attack. You seem to forget that orcs are always ready to
+            fight and immediately are overwhelmed. You manage to kill them but at great cost
+            to your own health and take 40 hp damage. You do get 20 Gold from the bag they were
+            surrounding.
+        `,
+        hp: -40,
+        gold: 20
+    }, {
+        id: 'parlay',
+        description: 'Outwit the orcs',
         result: `
             You attempt to charge towards the dragon, who sees you approach
             and let's loose a fireball. You wake up the next morning and the
@@ -100,8 +99,8 @@ const dragon = {
 };
 
 const treasure = {
-    id: 'treasure',
-    title: 'A Golden Treasure',
+    id: 'mages',
+    title: 'A circle of Hedge Mages',
     map: {
         top: '31%',
         left: '5%'

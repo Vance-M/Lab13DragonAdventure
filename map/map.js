@@ -24,7 +24,8 @@ for (let quest of questData) {
 
     a.textContent = quest.title;
     a.href = `../quest/?id=${quest.id}`;
-
+    console.log(a);
+    console.log(li);
     li.append(a);
     ul.append(li);
 }
