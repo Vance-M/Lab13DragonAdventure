@@ -43,16 +43,18 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+    position: relative;
 }
 
 .world-map {
     height: 100%;
     width: 100%;
-    position: relative;
 }
 
-ul {
+
+.questPos {
     position: absolute;
+    color:white;
 }
 
 label {

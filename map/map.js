@@ -21,11 +21,12 @@ if (user.hp <= 0 || completedAllQuests) {
 for (let quest of questData) {
     const li = document.createElement('li');
     const a = document.createElement('a');
-
+    a.classList.add('questPos');
     a.textContent = quest.title;
     a.href = `../quest/?id=${quest.id}`;
-    console.log(a);
-    console.log(li);
+    a.style.top = quest.map.top;
+    a.style.left = quest.map.left;
+
     li.append(a);
     ul.append(li);
 }

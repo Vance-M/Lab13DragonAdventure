@@ -4,3 +4,7 @@ export function findById(array, id){
         if (item.id === id)
             return item;
 }
+
+// export function findById(array, id){
+//     return array.find(item => item.idd === id);
+// }
