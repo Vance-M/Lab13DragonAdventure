@@ -21,13 +21,21 @@ if (user.hp <= 0 || completedAllQuests) {
 for (let quest of questData) {
     const li = document.createElement('li');
     // next 6 rows could be functioned
-    const a = document.createElement('a');
-    a.classList.add('questPos');
-    a.textContent = quest.title;
-    a.href = `../quest/?id=${quest.id}`;
-    a.style.top = quest.map.top;
-    a.style.left = quest.map.left;
+    if (user.completed[quest.id]){
+        const title = document.createElement('p');
+        title.textContent = quest.title;
+        title.style.top = quest.map.top;
+        title.style.left = quest.map.left;
+        li.append(title);
+    } else {
+        const a = document.createElement('a');
+        a.classList.add('questPos');
+        a.textContent = quest.title;
+        a.href = `../quest/?id=${quest.id}`;
+        a.style.top = quest.map.top;
+        a.style.left = quest.map.left;
+        li.append(a);
+    }
 
-    li.append(a);
     ul.append(li);
 }
