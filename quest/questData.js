@@ -141,7 +141,7 @@ const fort = {
     title: 'The Evil Fortress',
     map: {
         top: '98%',
-        left: '73%'
+        left: '75%'
     },
     image: 'EvilFort.jpeg',
     description: `
