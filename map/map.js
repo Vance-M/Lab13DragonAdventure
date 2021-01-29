@@ -1,4 +1,4 @@
-import questData from '../quest/questdata.js';
+import questData from '../quest/questData.js';
 const ul = document.querySelector('ul');
 
 const user = JSON.parse(localStorage.getItem('USER'));
