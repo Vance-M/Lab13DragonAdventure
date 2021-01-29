@@ -48,8 +48,8 @@ const orcs = {
     id: 'orcs',
     title: 'A Band of Orcs',
     map: {
-        top: '39%',
-        left: '67%'
+        top: '38%',
+        left: '66%'
     },
     image: 'Orcs.jpg',
 
@@ -98,8 +98,8 @@ const mages = {
     id: 'mages',
     title: 'A circle of Hedge Mages',
     map: {
-        top: '47%',
-        left: '80%'
+        top: '25%',
+        left: '83%'
     },
     image: 'HedgeMages.jpg',
     description: `
@@ -140,8 +140,8 @@ const fort = {
     id: 'fortess',
     title: 'The Evil Fortress',
     map: {
-        top: '76%',
-        left: '86%'
+        top: '72%',
+        left: '88%'
     },
     image: 'EvilFort.jpeg',
     description: `
@@ -181,8 +181,8 @@ const dragon = {
     id: 'dragon',
     title: 'The Black Tyrant, Mordulech',
     map: {
-        top: '55%',
-        left: '63%'
+        top: '53%',
+        left: '60%'
     },
     image: 'BlackDragon.jpg',
     description: `
