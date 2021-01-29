@@ -19,7 +19,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: Tan;
 }
 
 main {
@@ -75,7 +75,9 @@ h2 {
 }
 
 .main-logo {
-    animation: pulse 5s infinite ease-in-out;
+    height: 300px;
+    width: 600px;
+
 }
 
 header img {

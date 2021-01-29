@@ -1,6 +1,6 @@
 import questData from '../quest/questData.js';
 const ul = document.querySelector('ul');
-
+const encounters = document.querySelector('.encounters');
 const user = JSON.parse(localStorage.getItem('USER'));
 
 
@@ -20,13 +20,15 @@ if (user.hp <= 0 || completedAllQuests) {
 
 for (let quest of questData) {
     const li = document.createElement('li');
+    const lit = document.createElement('li');
     // next 6 rows could be functioned
     if (user.completed[quest.id]){
-        const title = document.createElement('p');
-        title.textContent = quest.title;
-        title.style.top = quest.map.top;
-        title.style.left = quest.map.left;
-        li.append(title);
+        const titles = document.createElement('p');
+        titles.textContent = quest.title;
+        titles.style.top = quest.map.top;
+        titles.style.left = quest.map.left;
+        lit.append(titles);
+        encounters.append(lit);
     } else {
         const a = document.createElement('a');
         a.classList.add('questPos');
@@ -36,6 +38,6 @@ for (let quest of questData) {
         a.style.left = quest.map.left;
         li.append(a);
     }
-
     ul.append(li);
+
 }

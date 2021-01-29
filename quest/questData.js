@@ -98,8 +98,8 @@ const mages = {
     id: 'mages',
     title: 'A circle of Hedge Mages',
     map: {
-        top: '25%',
-        left: '83%'
+        top: '28%',
+        left: '74%'
     },
     image: 'HedgeMages.jpg',
     description: `
@@ -140,8 +140,8 @@ const fort = {
     id: 'fortess',
     title: 'The Evil Fortress',
     map: {
-        top: '72%',
-        left: '88%'
+        top: '74%',
+        left: '78%'
     },
     image: 'EvilFort.jpeg',
     description: `
